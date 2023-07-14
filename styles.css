@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    border: 20px solid white;
+    border-radius: 50%;
+    position: relative;
+    margin: 20px auto;
+    background-color: black;
+}
+
+.logo::before,
+.logo::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: 10px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+
+}
+
+.logo::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.logo::after {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.logo span {
+
+    border-left: 10px solid white;
+    height: 80px;
+    position: absolute;
+    left: 48%;
+    top: 0;
+    top: auto;
+    bottom: -10px;
+    transform: rotate(180deg);
+
+
+}
+
+hr {
+    border: 0;
+    border-top: 10px solid white;
+    overflow: visible;
+    text-align: center;
+    height: 1px;
+    margin: 95px 0;
+}
+
+hr:after {
+    background: black;
+    content: '';
+    padding: 0 19px;
+    position: relative;
+    top: -13px;
+    width: 30px;
+}
